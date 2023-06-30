@@ -99,41 +99,32 @@ var nomeAnimale = 'Drago'
 
 I tre tipi di variabile in javascript sono: "CONST", "VAR" e "LET". Questi tre modelli hanno delle caratteristiche specifiche sulla loro "reperibilità" e modifica all'interno del programma.
 
-- La *const*:<br>
-è una variabile che non è variabile... ovvero che non può essere modificata, sia per tipo che per contenuto, durante l'esecuzione del programma.<br>Se volessimo dunque trasformare in una scritta un numero non sarà possibile.<br>Le constant sono ottime per un uso "globale".
 - La *var*:<br>
-è la variabile originaria, come la constant è ottima per un uso globale, può dunque passare tra diverse parti del programma e può assumere ogni sorta di cambiamento di tipo. E' possibile quindi riassegnarla e darle nuove tiplogie.
+è la variabile originaria, naviga nello scopo globale e può passare tra diverse parti del programma assumendo ogni sorta di cambiamento di tipo e valore. E' possibile quindi riassegnarla e darle nuove tiplogie.
+- La *const*:<br>
+è una variabile che non è variabile e limitata al proprio contesto... ovvero che non può essere modificata, sia per tipo che per contenuto, durante l'esecuzione del programma e che va necessariamente "passata" alle parti del programma all'occorrenza.<br>Se volessimo dunque trasformare in una scritta un numero non sarà possibile.
 - La *let*:<br>
 identica a var ha la particolarità di non passare oltre a dove viene dichiarata rimanendo utile esclusivamente allo "scopo di esecuzione".
 
 ```js
 
+var nomeAnimale = 'Draghi'
 const numeroDiAnimali = 3
-var nomeAnimali = 'Draghi'
-
-// dunque:
 
 function stampaNome () {
-  nomeAnimali = 'coccodrilli'
-  console.log('abbiamo',nomeroDiAnimali,nomeAnimale,'in cucina!')
+  //numeroDiAnimali = numeroDiAnimali+3  // Error: Cannot assign to "numeroDiAnimali" because it is a constant
+  nomeAnimale = 'coccodrilli'
+  console.log('abbiamo',numeroDiAnimali,nomeAnimale,'in cucina!')
 }
 
+stampaNome()
 // abbiamo 3 coccodrilli in cucina!
 ```
 
-Nell'esempio precedente vediamo che una "funzione" (una "funzionalità"), defisce una stringa (un testo) cambiando il nome dell'animale da _Draghi_ a _Coccodrilli_. Questo è possibile solo per Var e Let, le Const non possono farlo. E' da notare che le Const non possono nemmeno cambiare il loro "tipo", dunque, in questo caso, essendo un numero non potranno essere riassegnate come stringa di testo.
-Se provassimo a fare:
-
-```js
-const numeroDiAnimali = 3
-
-function cambiaInTesto () {
-  numeroDiAnimali = '3'
-}
-```
-
-Andremmo incontro ad un errore.
-Seguendo gli errori possibili evidenziamo il limite, invece, di tutte le variabili: Non poter risalire dallo scopo... cioè dalla posizione in cui vengono assegnate:
+La funzione defisce una stringa (un testo) che cambia da _Draghi_ a _Coccodrilli_. Questo è possibile solo per var e let, le const non possono farlo perchè, appunto, "costanti" ed essendo in questocaso un numero non potranno essere riassegnate come stringa di testo.
+L'altra cosa da notare è che, fintanto che non verrà definito nessun elemento dentro le parentesi tonde, le variabili passeranno alle funzioni di livello più basso, in alternativa la funzione farà uso e farà passare solo le variabili con lo stesso nome espresso nelle parentesi tonde. 
+Se definiamo quindi una variabile potrà questa essere recuperata dalla funzione che la seguirà e dalle sue sottofuzioni (il concetto prende il nome di ereditarietà, inhiterance), ma è da comprendere che non sarà possibile che avvenga il contrario (il limite è detto hoisting, elevazione) perchè quel preciso dato ancora non esiste.<br>
+Ribadiamo dunque che <i>tutti i dati non possono risalire dallo scopo... cioè dalla posizione in cui vengono creati</i>:
 
 ```js
 function cambiaInTesto () {
@@ -143,22 +134,39 @@ function cambiaInTesto () {
 console.log(numeroDiAnimali)
 ```
 
-Questa esecuzione darebbe un errore perchè la variabile è dentro una funzione e non può dunque essere letta dal console.log, che è fuori.
-In un modo analogo funzionano le variabili di tipo "let", che hanno la particolarità di essere univoce per il solo scopo in uso... Facciamo un esempio:
+Questa esecuzione darebbe un errore (o meglio un "null", "inseistente") perchè la variabile è dentro una funzione e non può dunque essere letta dal console.log, che è fuori.
+Esclusi specifici casi, le variabili sono  univoce per il solo scopo in uso e se ridichiarate verranno prese in considerazione per il nuovo contesto come nuova variabile.
 
 ```js
+var coloreAnimale = 'grigio'
 const numeroDiAnimali = '2'
 let nomeAnimale = 'Drago'
 
 function esempio_1 (){
-  let nomeAnimale = 'Papera'
+  var coloreAnimale = 'blue' 
   const numeroDiAnimali = '3'
+  let nomeAnimale = 'Papera'
+  return [coloreAnimale,numeroDiAnimali,nomeAnimale]
 }
 
 function esempio_2 (){
-  let nomeAnimale = 'Coccodrillo'
+  var coloreAnimale = 'rosso' 
   const numeroDiAnimali = '5'
+  let nomeAnimale = 'Coccodrillo'
+  return [coloreAnimale,numeroDiAnimali,nomeAnimale]
 }
+
+console.log(
+  coloreAnimale,numeroDiAnimali,nomeAnimale,
+  esempio_1 (),
+  esempio_2 ()
+)
+
+// "grigio"
+// "2"
+// "Drago"
+// ["blue","3", "Papera"]
+// ["rosso","5", "Coccodrillo"]
 ```
 
 Nel costrutto precedente avverrà un errore dovuto alle const che, come le var, non posso essere riassegnate con lo stesso nome. Le constant, in più, non possono essere nemmeno modificate per tipo e contenuto. Diffrentemente, le let, possono essere riassegnate in ogni modo purchè con scopo diverso come se, per ogni contesto, fosse una differente allocazione di memoria pur avendo lo stesso nome.
