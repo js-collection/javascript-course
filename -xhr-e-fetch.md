@@ -40,7 +40,7 @@ function getUsername() {
     })
     .catch( error => {
       console.error('Si è verificato un errore:', error);
-    });
+    })
 }
 
 //... eseguire uno dei due test
