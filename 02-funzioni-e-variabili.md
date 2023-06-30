@@ -137,3 +137,21 @@ const myFunctionality = function () {
 ---
 
 #### Altri tipi di dati
+
+Abbiamo visto che le variabili possono contenere dati e abbiamo citato spesso il termine "Tipo"... ma cos'è?
+Il "tipo" è il modello che viene applicato al dato dalla macchina.
+I tipi di base da dover conoscere in js sono:
+- *le funzioni*;<br>Rappresentano un blocco di codice riutilizzabile che può essere chiamato per eseguire determinate azioni
+- *I numeri*;<br>Tutti i numeri, inclusi numeri interi e numeri decimali.
+- *Le stringe*;<br>Ovveri i caratteri, i testi, intesi come "elenco di caratteri", difatti una stringa è un array
+- *Gli array*;<br>Elenchi (come le stringhe) di dati
+- *Booleano*;<br> Il True/False, il Vero e Falso
+- *L'Oggetto*;<br> Una collezione di dati organizzata contenente altri dati e funzioni
+
+ed i due elenti per definire quando il dato è:<br>
+
+- *null*;<br>il dato, semplicemente, non esiste o non è recuperabile in alcun modo
+- *undefined*;<br>il dato esiste ma non è possibile definirlo in alcun modo
+
+esistono altri tipi di dati validi per corsi più avanzati come: Date, RegExp, symbol nonchè il concetto di prototype.<br>
+Per ragioni di mera esperienza si consiglia lo studio di quest'ultime in un contesto più avanzato. 
