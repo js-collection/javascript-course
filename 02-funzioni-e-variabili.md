@@ -10,7 +10,7 @@ Le "function" è il primo concetto da apprendere nell'informatica. Seppur di ori
 Di base, la dichiarazione di una funzione avviene in questo modo:
 
 ```js
-TIPO-FUNZIONE NOME-DELLA-FUNZIONE () {
+FUNZIONE NOME-DELLA-FUNZIONE () {
     // COSE DA FARE...
 }
 
@@ -30,7 +30,7 @@ Esistono diversi tipi di funzioni, le vedremo in seguito, per ora ci basta spare
 ```js
 IL-MIO-DATO-ESTERNO
 
-TIPO-FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
+FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
     // COSE DA FARE, ANCHE CON IL-MIO-DATO-ESTERNO...
 }
 ```
@@ -40,7 +40,7 @@ La funzione serve quindi ad elaborare i dati che possono essere definiti e torna
 ```js
 IL-MIO-DATO-ESTERNO
 
-TIPO-FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
+FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
     // COSE DA FARE, ANCHE CON IL-MIO-DATO-ESTERNO...
 
     "TORNA" IL-MIO-DATO-MODIFICATO
@@ -60,7 +60,7 @@ console.log(somma(a,b))
 ```
 Senza il return non potremmo vere il valore 8, tornerebbe "undefined" ossia "non definibile".<br>
 
-E' anche possibile attendere il risultato ed utilizzalo a catena, annidando una funzione dentro l'altra, il concetto è detto "callback"
+E' anche possibile attendere il risultato per utilizzarlo a cascata, annidando una funzione dentro l'altra, il concetto è detto "callback"
 
 ```js
 a = 3
@@ -77,7 +77,8 @@ console.log(
 )
 ```
 
-Nell'esempio sopra abbiamo annidato una funzione che attende l'esecuzione della precedente e ne utilizza il risultato
+Nell'esempio sopra abbiamo annidato una funzione che attende l'esecuzione della precedente e ne utilizza il risultato.<br>
+Esistono concetti più avanzati per le funzioni? La risposta è "SI", ma li vedremo più avanti.
 
 ---
 
@@ -199,3 +200,5 @@ ed i due elenti per definire quando il dato è:<br>
 
 esistono altri tipi di dati validi per corsi più avanzati come: Date, RegExp, symbol nonchè il concetto di prototype.<br>
 Per ragioni di mera esperienza si consiglia lo studio di quest'ultime in un contesto più avanzato. 
+
+Nella prossima lezione impareremo ad usare ad usare array e stringhe, manipolandoli.
