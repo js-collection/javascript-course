@@ -5,5 +5,5 @@ Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.de
 ### PERCORSO DI STUDI - INDICE
 
 <ul>
-  <li>[06-i-tipi-di-loop.md](https://github.com/js-rt-collection/js-basic-course-ita/blob/main/06-i-tipi-di-loop.md)"></li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/06-tipi-di-loop.md">06 Tipi di loop</a> </li>
 </ul> 
