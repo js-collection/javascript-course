@@ -80,6 +80,22 @@ const slicedArray = fruits.slice(1, 4);
 console.log(slicedArray); // Output: ['banana', 'orange', 'grape']
 ```
 
+- **splice()**:Modifica l'array rimuovendo, sostituendo o aggiungendo elementi in posizioni specifiche.
+```js
+const fruits = ['apple', 'banana', 'orange', 'grape'];
+// Rimuove 1 elemento a partire dall'indice 2
+fruits.splice(2, 1);
+console.log(fruits); // Output: ['apple', 'banana', 'grape']
+
+// Sostituisce 1 elemento a partire dall'indice 1 con 'mango'
+fruits.splice(1, 1, 'mango');
+console.log(fruits); // Output: ['apple', 'mango', 'grape']
+
+// Aggiunge 'peach' e 'kiwi' a partire dall'indice 2
+fruits.splice(2, 0, 'peach', 'kiwi');
+console.log(fruits); // Output: ['apple', 'mango', 'peach', 'kiwi', 'grape']
+```
+
 - **join()**: Restituisce una stringa che rappresenta gli elementi dell'array concatenati con un separatore specificato.
 ```js
 const fruits = ['apple', 'banana', 'orange'];
