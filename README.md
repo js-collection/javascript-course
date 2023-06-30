@@ -5,8 +5,9 @@ Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.de
 ### PERCORSO DI STUDI - INDICE
 
 <ul>
-  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/02-funzioni-e-variabili.md">02 Funzioni e variabili</a> </li>
-  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/03-array-di-dati.md">03 Array di dati</a> </li>
-  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/04-le-stringhe.md">03 Le Stringhe</a> </li>
-  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/06-tipi-di-loop.md">06 Tipi di loop</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-funzioni-e-variabili.md">Funzioni e variabili</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-gli-oggetti.md">Gli Oggetti</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-array-di-dati.md">Array di dati</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-le-stringhe.md">Le Stringhe</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-tipi-di-loop.md">Tipi di loop</a> </li>
 </ul> 
