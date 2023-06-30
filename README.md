@@ -6,6 +6,7 @@ Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.de
 
 <ul>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-funzioni-e-variabili.md">Funzioni e variabili</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-le-condizioni-di-stato.md">Le condizioni di stato</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-gli-oggetti.md">Gli Oggetti</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-array-di-dati.md">Array di dati</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-le-stringhe.md">Le Stringhe</a> </li>
