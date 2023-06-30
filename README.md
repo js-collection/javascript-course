@@ -10,4 +10,5 @@ Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.de
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-array-di-dati.md">Array di dati</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-le-stringhe.md">Le Stringhe</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-tipi-di-loop.md">Tipi di loop</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-dom-e-eventi.md">DOM ed eventi</a> </li>
 </ul> 
