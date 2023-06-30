@@ -13,4 +13,6 @@ Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.de
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-tipi-di-loop.md">Tipi di loop</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-singleton-e-classi.md">Singleton e Classi</a> </li>
   <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-dom-e-eventi.md">DOM ed eventi</a> </li>
+  <li> <a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-xhr-e-fetch.md">XHR e Fetch</a> </li>
+  
 </ul> 
