@@ -94,6 +94,19 @@ for (let proprietà in animale) {
 // dieta: Carnivoro
 ```
 
+Infine ciclo FOREACH, il must degli array e delle funzioni. Questo particolre costrutto esegue direttamente una funzione per ogni elemento dell'array:
+
+```js
+IL-MIO-ARRAY.CICLAMI-ED-ESEGUI ( FUNZIONE ( ELEMENTO-ESTRATTO ) {
+  // blocco di codice da eseguire sull'elemento estratto
+}
+
+const numbers = [1, 2, 3];
+numbers.forEach( function (number) {
+  console.log(number); // Output: 1 2 3
+});
+```
+
 Seguendo tali logiche troviamo il ciclo *WHILE*.<br>
 Questo ciclo è usato per iterare elementi fintanto che la condizione risulta veritiera:
 
