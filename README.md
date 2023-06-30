@@ -1,11 +1,9 @@
 # Javascript corso base
-Materiale didattico a cura di @berto-dev - https://berto.dev
+Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.dev/corsi.html)
 
 
-### PERCORSO DI STUDI -INDICE
+### PERCORSO DI STUDI - INDICE
 
 <ul>
-  <li><a href="https://github.com/js-rt-collection/js-basic-course-ita/blob/main/00-i-tipi-di-loop.md">I cicli FOR, WHILE e DO-WHILE</a></li>
+  <li>[06-i-tipi-di-loop.md](https://github.com/js-rt-collection/js-basic-course-ita/blob/main/06-i-tipi-di-loop.md)"></li>
 </ul> 
-
-
