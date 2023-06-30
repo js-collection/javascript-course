@@ -35,6 +35,50 @@ TIPO-FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
 }
 ```
 
+La funzione serve quindi ad elaborare i dati che possono essere definiti e tornare in deverse forme.<br> Al di la della definizione di un dato, che vedremo nel prossimo step, i concetti di ritorno di base in una  funzione javascript sono due: il *return* e la *callback*:
+
+```js
+IL-MIO-DATO-ESTERNO
+
+TIPO-FUNZIONE NOME-DELLA-FUNZIONE (IL-MIO-DATO-ESTERNO) {
+    // COSE DA FARE, ANCHE CON IL-MIO-DATO-ESTERNO...
+
+    "TORNA" IL-MIO-DATO-MODIFICATO
+}
+
+// alla pratica:
+
+a = 3
+b = 5
+function somma () {
+  return a+b
+}
+
+console.log(somma(a,b))
+
+// somma torna un risultato che sarà il numero 8
+```
+Senza il return non potremmo vere il valore 8, tornerebbe "undefined" ossia "non definibile".<br>
+
+E' anche possibile attendere il risultato ed utilizzalo a catena, annidando una funzione dentro l'altra, il concetto è detto "callback"
+
+```js
+a = 3
+b = 5
+x = 2
+function somma (a,b,callback) {
+  return callback(a+b)
+}
+
+console.log( 
+  somma( a,b, function sottrai_2(r){ 
+    return r-2 
+  })
+)
+```
+
+Nell'esempio sopra abbiamo annidato una funzione che attende l'esecuzione della precedente e ne utilizza il risultato
+
 ---
 
 #### Le Variabili (Const, Var, Let)
