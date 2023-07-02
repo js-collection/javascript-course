@@ -1,0 +1,126 @@
+# Eventi JavaScript
+
+## Eventi standard
+
+> a questa lista mancherà sicuramente qualcosa ed è in costante aggiornameto. Per ogni esigenza rimandiamo alle lista delle [WEB API di Mozilla](https://developer.mozilla.org/en-US/docs/Web/API)
+
+- `abort`: Si verifica quando il caricamento di un'immagine viene interrotto.
+- `afterprint`: Si verifica dopo che una pagina è stata stampata o visualizzata nella finestra di dialogo di anteprima di stampa.
+- `animationend`: Si verifica quando una transizione CSS si conclude.
+- `animationiteration`: Si verifica quando una transizione CSS viene ripetuta.
+- `animationstart`: Si verifica quando una transizione CSS inizia.
+- `beforeprint`: Si verifica prima che una pagina venga stampata o visualizzata nella finestra di dialogo di anteprima di stampa.
+- `beforeunload`: Si verifica prima che l'utente stia per lasciare la pagina corrente.
+- `blur`: Si verifica quando un elemento perde il focus.
+- `canplay`: Si verifica quando è possibile iniziare a riprodurre un file multimediale.
+- `canplaythrough`: Si verifica quando è possibile riprodurre un file multimediale senza interruzioni.
+- `change`: Si verifica quando il valore di un elemento input, select o textarea viene modificato.
+- `click`: Si verifica quando viene effettuato un clic su un elemento.
+- `contextmenu`: Si verifica quando viene aperto il menu contestuale (tasto destro del mouse) su un elemento.
+- `copy`: Si verifica quando viene copiato il contenuto negli appunti.
+- `cut`: Si verifica quando viene tagliato il contenuto negli appunti.
+- `dblclick`: Si verifica quando viene effettuato un doppio clic su un elemento.
+- `drag`: Si verifica quando un elemento viene trascinato.
+- `dragend`: Si verifica quando il trascinamento di un elemento è terminato.
+- `dragenter`: Si verifica quando un elemento viene trascinato sopra un altro elemento.
+- `dragleave`: Si verifica quando un elemento viene trascinato fuori da un altro elemento.
+- `dragover`: Si verifica quando un elemento viene trascinato sopra un altro elemento.
+- `dragstart`: Si verifica quando viene avviato il trascinamento di un elemento.
+- `drop`: Si verifica quando un elemento viene rilasciato dopo essere stato trascinato.
+- `durationchange`: Si verifica quando la durata di un file multimediale viene modificata.
+- `emptied`: Si verifica quando un elemento multimediale viene svuotato del suo contenuto.
+- `ended`: Si verifica quando un file multimediale ha raggiunto la sua fine.
+- `error`: Si verifica quando si verifica un errore durante il caricamento di un file multimediale o un'immagine.
+- `focus`: Si verifica quando un elemento riceve il focus.
+- `focusin`: Si verifica quando un elemento o uno dei suoi figli riceve il focus.
+- `focusout`: Si verifica quando un elemento o uno dei suoi figli perde il focus.
+- `fullscreenchange`: Si verifica quando lo stato di visualizzazione a schermo intero di un elemento cambia.
+- `fullscreenerror`: Si verifica quando si verifica un errore durante il tentativo di passare o uscire dalla modalità a schermo intero.
+- `hashchange`: Si verifica quando il frammento identificatore dell'URL cambia.
+- `input`: Si verifica quando il valore di un elemento input, select o textarea viene modificato.
+- `invalid`: Si verifica quando un elemento input o select è invalido.
+- `keydown`: Si verifica quando viene premuto un tasto sulla tastiera.
+- `keypress`: Si verifica quando un tasto viene premuto e rilasciato sulla tastiera.
+- `keyup`: Si verifica quando viene rilasciato un tasto sulla tastiera.
+- `load`: Si verifica quando un elemento o una pagina è completamente caricato.
+- `loadeddata`: Si verifica quando i dati di un file multimediale sono stati caricati.
+- `loadedmetadata`: Si verifica quando le informazioni sul file multimediale sono state caricate.
+- `loadstart`: Si verifica quando viene avviato il caricamento di un file multimediale.
+- `message`: Si verifica quando viene ricevuto un messaggio da un'altra finestra o un altro frame.
+- `mousedown`: Si verifica quando viene premuto il pulsante del mouse su un elemento.
+- `mouseenter`: Si verifica quando il cursore del mouse entra in un elemento.
+- `mouseleave`: Si verifica quando il cursore del mouse esce da un elemento.
+- `mousemove`: Si verifica quando il cursore del mouse si muove su un elemento.
+- `mouseout`: Si verifica quando il cursore del mouse esce da un elemento o uno dei suoi figli.
+- `mouseover`: Si verifica quando il cursore del mouse entra in un elemento o uno dei suoi figli.
+- `mouseup`: Si verifica quando viene rilasciato il pulsante del mouse su un elemento.
+- `offline`: Si verifica quando il browser passa offline.
+- `online`: Si verifica quando il browser passa online.
+- `pagehide`: Si verifica quando l'utente sta lasciando una pagina.
+- `pageshow`: Si verifica quando una pagina viene visualizzata nel browser.
+- `paste`: Si verifica quando viene incollato il contenuto negli appunti.
+- `pause`: Si verifica quando la riproduzione di un file multimediale viene interrotta.
+- `play`: Si verifica quando la riproduzione di un file multimediale viene avviata.
+- `playing`: Si verifica quando la riproduzione di un file multimediale è in corso.
+- `popstate`: Si verifica quando lo stato di cronologia della finestra cambia.
+- `progress`: Si verifica quando viene caricato o viene ricevuto un file multimediale.
+- `ratechange`: Si verifica quando la velocità di riproduzione di un file multimediale cambia.
+- `reset`: Si verifica quando viene ripristinato un modulo.
+- `resize`: Si verifica quando la dimensione della finestra del browser viene modificata.
+- `scroll`: Si verifica quando si fa scorrere l'area di visualizzazione di un elemento.
+- `search`: Si verifica quando viene attivata la funzione di ricerca in un campo di input.
+- `seeked`: Si verifica quando la ricerca di un file multimediale è stata completata.
+- `seeking`: Si verifica quando viene avviata la ricerca di un file multimediale.
+- `select`: Si verifica quando viene selezionato il contenuto di un elemento input o textarea.
+- `show`: Si verifica quando viene visualizzato un elemento nascosto.
+- `stalled`: Si verifica quando il caricamento di un file multimediale è interrotto temporaneamente.
+- `storage`: Si verifica quando viene modificato un dato nell'archiviazione locale.
+- `submit`: Si verifica quando viene inviato un modulo.
+- `suspend`: Si verifica quando il caricamento di un file multimediale è sospeso temporaneamente.
+- `timeupdate`: Si verifica quando il tempo di riproduzione di un file multimediale viene aggiornato.
+- `toggle`: Si verifica quando viene attivato o disattivato uno switch o un elemento a menu.
+- `touchcancel`: Si verifica quando un evento di tocco viene annullato.
+- `touchend`: Si verifica quando un tocco sullo schermo viene rilasciato.
+- `touchmove`: Si verifica quando un tocco sullo schermo si sposta.
+- `touchstart`: Si verifica quando un tocco sullo schermo viene rilevato.
+- `transitionend`: Si verifica quando una transizione CSS si conclude.
+- `unload`: Si verifica quando un elemento o una pagina viene scaricato (chiuso o navigato lontano).
+- `volumechange`: Si verifica quando il volume di un file multimediale viene modificato.
+- `waiting`: Si verifica quando la riproduzione di un file multimediale viene interrotta e sta aspettando di riprendere.
+- `wheel`: Si verifica quando si fa scorrere la rotellina del mouse su un elemento.
+- `input`: Si verifica quando il valore di un elemento input, select o textarea viene modificato.
+- `invalid`: Si verifica quando un elemento input o select è invalido.
+- `reset`: Si verifica quando viene ripristinato un modulo.
+- `select`: Si verifica quando viene selezionato il contenuto di un elemento input o textarea.
+- `submit`: Si verifica quando viene inviato un modulo.
+- `beforeinput`: Si verifica prima che venga inserito del testo o venga eseguita un'azione di editing.
+- `compositionend`: Si verifica quando la composizione di un testo inserito viene completata o interrotta.
+- `compositionstart`: Si verifica quando inizia la composizione di un testo inserito.
+- `compositionupdate`: Si verifica quando il testo di composizione viene modificato.
+- `copy`: Si verifica quando viene copiato il contenuto negli appunti.
+- `cut`: Si verifica quando viene tagliato il contenuto negli appunti.
+- `paste`: Si verifica quando viene incollato il contenuto negli appunti.
+- `keydown`: Si verifica quando viene premuto un tasto sulla tastiera.
+- `keypress`: Si verifica quando un tasto viene premuto e rilasciato sulla tastiera.
+- `keyup`: Si verifica quando viene rilasciato un tasto sulla tastiera.
+- `focus`: Si verifica quando un elemento riceve il focus.
+- `focusin`: Si verifica quando un elemento o uno dei suoi figli riceve il focus.
+- `focusout`: Si verifica quando un elemento o uno dei suoi figli perde il focus.
+- `blur`: Si verifica quando un elemento perde il focus.
+- `change`: Si verifica quando il valore di un elemento input, select o textarea viene modificato.
+- `contextmenu`: Si verifica quando viene aperto il menu contestuale (tasto destro del mouse) su un elemento.
+- `scroll`: Si verifica quando si fa scorrere l'area di visualizzazione di un elemento.
+- `resize`: Si verifica quando la dimensione della finestra del browser viene modificata.
+- `hashchange`: Si verifica quando il frammento identificatore dell'URL cambia.
+- `popstate`: Si verifica quando lo stato di cronologia della finestra cambia.
+- `beforeunload`: Si verifica prima che l'utente stia per lasciare la pagina corrente.
+- `unload`: Si verifica quando un elemento o una pagina viene scaricato (chiuso o navigato lontano).
+- `DOMContentLoaded`: Si verifica quando il documento HTML è stato completamente caricato e analizzato, senza attendere che si completi il caricamento di tutti gli elementi correlati (immagini, fogli di stile, etc.).
+- `error`: Si verifica quando si verifica un errore durante il caricamento di un file multimediale, un'immagine o una risorsa.
+- `message`: Si verifica quando viene ricevuto un messaggio da un'altra finestra o un altro frame.
+- `offline`: Si verifica quando il browser passa offline.
+- `online`: Si verifica quando il browser passa online.
+
+## Eventi personalizzati
+
+Puoi anche creare eventi personalizzati utilizzando l'interfaccia `CustomEvent` in JavaScript.
