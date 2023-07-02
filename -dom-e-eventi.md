@@ -6,11 +6,13 @@ Materiale didattico a cura di @berto-dev - https://berto.dev
 
 #### Il DOM e gli eventi
 
-<b>Il DOM (Document Object Model):</b> Il DOM è una rappresentazione strutturata e gerarchica di un documento HTML o XML, che consente di manipolare e interagire con gli elementi della pagina web utilizzando JavaScript. Il DOM rappresenta il documento come un albero di nodi, in cui ogni elemento, attributo e testo sono rappresentati da un nodo. Il DOM offre un'API che consente di accedere e modificare dinamicamente gli elementi, gli attributi e il contenuto di una pagina web.
+<b>Il DOM (Document Object Model):</b> Il DOM è una rappresentazione strutturata e gerarchica di un documento HTML o XML. Essa permette di manipolare e interagire con gli elementi di una pagina web utilizzando JavaScript. Il DOM rappresenta il documento come un albero di nodi, in cui ogni elemento, attributo e testo sono rappresentati da un nodo. Grazie al DOM, è possibile accedere e modificare dinamicamente gli elementi, gli attributi e il contenuto di una pagina web.
 
-Tutti i nodi disponibili sono presenti tra i manuali didattici del w3c [[1](https://w3c.github.io/)][[2](https://www.w3.org/)] che, tra le altre cose, rappresenta l'ente ufficiale che determina lo standard di qualità del web moderno e "<a href='https://w3c.github.io/elements-of-html/' target='_blank'>tutti i suoi componenti html</a>" ed la loro <a href='https://validator.w3.org/#validate_by_input' target='_blank'>validazione strutturale</a>. Questi componenti possono essere recuperati e manipolati per struttura, attributi e valori, da javascript direttamente in runtime (mentre il codice è in funzione) perchè Js è parte integrante dell'ecosistema web... è letteralmente nato per la manipolazione dei dati del DOM e del lato utente, quindi dell'HTML o di qualsiasi markup (di cui si disponga delle API adatte) per la struttura di dati.
+I manuali didattici del W3C (World Wide Web Consortium), disponibili all'indirizzo [https://w3c.github.io/](https://w3c.github.io/) e [https://www.w3.org/](https://www.w3.org/), contengono tutte le informazioni sui nodi disponibili. Il W3C è l'ente ufficiale che determina lo standard di qualità del web moderno e definisce [tutti i componenti HTML](https://w3c.github.io/elements-of-html/) e la loro validazione strutturale, che può essere verificata attraverso il [validatore ufficiale](https://validator.w3.org/#validate_by_input).
 
-Un po' di codice rende l'idea:
+JavaScript può recuperare e manipolare la struttura, gli attributi e i valori di questi componenti direttamente in tempo reale durante l'esecuzione del codice, poiché è una parte integrante dell'ecosistema web. JavaScript è stato creato specificamente per manipolare i dati del DOM e il lato utente, ovvero l'HTML o qualsiasi altro markup per la struttura dei dati che fornisca le API adeguate.
+
+Ecco un esempio di codice HTML che illustra l'idea del DOM:
 
 ```html
 <!DOCTYPE html>
@@ -31,10 +33,9 @@ Un po' di codice rende l'idea:
 </html>
 ```
 
-Quello che vediamo sopra non è "un linguaggio di programmazione", è un "lunguaggio di markup", un "linguaggio strutturale". Html deteremina solo ed esclusivamente la struttura di un "oggetto statico", come ogni oggetto informatico ma scritto in un file che ne coservi la forma idealizzata in "gruppetti di contenitori".
-Se ti stai chiedendo come abbellire il codice sopra, è stato creato un linguaggio apposito che arricchisce di elementi visuali il codice html... il CSS. Non è tema del corso ma nulla vi vieta di scoprire meglio ogni piccolo dettaglio di questo <a href="https://www.w3.org/Style/CSS/all-properties.en.html" target="_blank">"linguaggio di stile" dal w3c</a>
+Da notare che l'HTML non è un linguaggio di programmazione, ma un linguaggio di markup che definisce la struttura di un oggetto statico, simile ad altri oggetti informatici, ma scritto in un file che conserva la sua forma idealizzata in gruppi di contenitori. Se desideri abbellire l'output del codice HTML, esiste un linguaggio apposito chiamato CSS che permette di aggiungere elementi visivi. Puoi trovare maggiori dettagli su ogni proprietà CSS tramite il W3C: https://www.w3.org/Style/CSS/all-properties.en.html
 
-Proviamo ad applicarlo in pagina:
+Proviamo ad applicare il CSS alla pagina HTML precedente per modificarne l'aspetto:
 
 ```html
 <!DOCTYPE html>
@@ -66,15 +67,15 @@ Proviamo ad applicarlo in pagina:
 </html>
 ```
 
-In questo modo abbiamo modificato il titolo e il paragrafo di questa pagina web. CSS però può fare molto di più e in moltissimi casi, per cose standard è consigliabile utilizzarlo al posto di js, ormai più adatto alle "grandi scopi" che a colorare pulsanti e scritte (almeno sul web standard). 
+In questo modo abbiamo modificato il colore, la dimensione del carattere e lo stile del titolo e del paragrafo nella pagina web. CSS può fare molto di più e, per la maggior parte dei casi standard, è consigliabile utilizzarlo al posto di JavaScript, che è più adatto per compiti più complessi anziché per la modifica dei colori dei pulsanti e dei testi (almeno nel contesto del web standard).
 
-Tutto ciò è comunque considerabile "statico", anche se un pulsantino nel codice HTML dovesse cambiar colore e forma grazie al css, di dati concreti è cambiato ben poco... bisogna che succeda qualcosa e che qualcuno raccolga e modifichi fisicamente tale struttura... e questo qualcuno è proprio JS!
+Tuttavia, anche con l'uso di CSS, le modifiche apportate al codice HTML sono ancora considerate "statiche". Per apportare modifiche significative ai dati concreti della pagina, è necessario che qualcosa accada e che qualcuno raccogla e modifichi fisicamente la struttura del DOM. E questo "qualcuno" è proprio JavaScript!
 
-JavaScript, infatti, non si muove da solo e necessita che qualcosa "capiti"... La "circostanza di avvenimenti", che questi siano dettati dalla macchina o da un'azione utente non importa, viene detta "evento". Per l'esattezza: Js è un linguaggio event driven, interpretato runtime da un motore (solitamente scritti in c++ come il V8) ovvero il cui codice viene eseguito linea per linea da un interprete durante l'esecuzione del programma stesso. L'interprete legge il codice sorgente, analizza le istruzioni una alla volta e le esegue immediatamente.
-Da notare che alcuni motori di interpretazione, proprio come il V8, utilizzano "anche" la compilazione JIT (Just-In-Time Compilation) per ottimizzare l'esecuzione del codice durante l'esecuzione, traformando l'interpretazione in linguaggio a basso livello, quindi da "istruzione" a "macchina" letteralmente. Questo significa che parte del codice JavaScript, talvolta, viene compilato in codice macchina in tempo reale per migliorare le prestazioni, ma rimane che l'interprete viene comunque utilizzato per l'esecuzione complessiva del codice.
+JavaScript non può agire da solo, ma richiede che accada qualcosa, una "circostanza di avvenimenti", sia essa determinata dalla macchina o da un'azione dell'utente. JavaScript è un linguaggio event-driven, interpretato runtime da un motore (solitamente scritto in C++ come il motore V8). Il codice JavaScript viene eseguito linea per linea da un interprete durante l'esecuzione del programma. L'interprete legge il codice sorgente, analizza le istruzioni una alla volta e le esegue immediatamente.
 
+DaÈ importante notare che alcuni motori di interpretazione, come il V8, utilizzano anche la compilazione JIT (Just-In-Time Compilation) per ottimizzare l'esecuzione del codice durante l'esecuzione. Ciò significa che parte del codice JavaScript viene compilato in codice macchina in tempo reale per migliorare le prestazioni. Tuttavia, l'interprete viene comunque utilizzato per l'esecuzione complessiva del codice.
 
-Chiarito ciò, cerchiamo di comprendere meglio gli eventi... 
+Detto quanto, cerchiamo di comprendere meglio gli eventi... 
 
 <b>Gli eventi:</b> In JavaScript, gli eventi sono azioni che si verificano nella pagina web, come un click del mouse, una pressione di un tasto o il caricamento completo della pagina. Gli eventi consentono di interagire con l'utente e di rispondere alle azioni dell'utente sulla pagina. JavaScript fornisce un'ampia gamma di eventi predefiniti, come onclick, onload, onchange, e così via. Puoi ascoltare e gestire gli eventi utilizzando gli event listeners.
 
