@@ -77,6 +77,53 @@ DaÈ importante notare che alcuni motori di interpretazione, come il V8, utilizz
 
 Detto quanto, cerchiamo di comprendere meglio gli eventi... 
 
+
+---
+
+#### Manipolazione tramite attributi
+
+La manipolazione dei contenuti tramite attributi di JavaScript e HTML è una tecnica molto potente che consente di modificare dinamicamente il contenuto di una pagina web. Attraverso l'uso di JavaScript, è possibile selezionare gli elementi HTML e modificarli aggiungendo, rimuovendo o cambiando i loro attributi.
+
+Per selezionare gli elementi HTML, è possibile utilizzare vari metodi messi a disposizione da JavaScript, come `getElementById`, `getElementsByClassName`, `getElementsByTagName` e `querySelector`. Questi metodi consentono di identificare gli elementi sulla base del loro ID, classe, tag o selettore CSS.
+
+Una volta selezionato l'elemento desiderato, è possibile accedere ai suoi attributi tramite la proprietà attributes. Ad esempio, se si desidera accedere all'attributo src di un'immagine, si può utilizzare la seguente sintassi: elemento.attributes.src.value.
+
+Per modificare un attributo di un elemento HTML, si può assegnare un nuovo valore alla proprietà corrispondente. Ad esempio, per cambiare il testo di un elemento h1, si può utilizzare il seguente costrutto:
+
+```js
+elemento = document.getElementById("mioTitolo")
+elemento.textContent = "Nuovo titolo"
+```
+
+Nell'esempio, getElementById viene utilizzato per selezionare l'elemento con l'ID "mioTitolo", mentre textContent viene utilizzato per assegnare un nuovo valore al testo dell'elemento.
+
+Inoltre, è possibile recuperare vecchi o aggiungere nuovi attributi agli elementi HTML o rimuoverli utilizzando le apposite funzioni di JavaScript. Ad esempio, per aggiungere un attributo href a un elemento a, si può utilizzare il seguente codice:
+
+```js
+link = document.getElementById("mioLink")
+
+// recuperare un attributo
+linkLink = link.getAttribute("href")
+
+// settare un attributo 
+link.setAttribute("href", "https://www.example.com")
+```
+
+In questo nuovo esempio, `setAttribute` viene utilizzato per aggiungere l'attributo href all'elemento con l'ID "mioLink" e assegnargli il valore "https://www.example.com".
+
+E' da notare che, come da esempi precedenti, è possibile settare un attributo anche come accade per gli oggetti:
+```js
+linkLink = document.getElementById("mioLink").getAttribute("href")
+linkLink = "https://www.example.com"
+
+// oppure:
+document.getElementById("mioLink").href = "https://www.example.com"
+```
+
+Questa pratica, anche se sintatticamente più estetica, non è consigliabile per ragioni di compatibilità.
+
+La manipolazione dei contenuti tramite attributi di JavaScript e HTML offre un'ampia gamma di possibilità per rendere le pagine web più dinamiche e interattive. Con queste tecniche, è possibile creare effetti di animazione, aggiornare dinamicamente i dati o personalizzare il contenuto in base alle preferenze dell'utente.
+
 ---
 
 #### Gli eventi
@@ -93,7 +140,7 @@ Per manipolare il DOM utilizzando gli eventi, è possibile seguire questi 3 semp
 Ecco un esempio di codice JavaScript che mostra come utilizzare un event listener per gestire un click del mouse su un elemento:
 
 ```js
-const button = document.getElementById('myButton')
+button = document.getElementById('myButton')
 
 button.addEventListener('click', function() {
   // Azioni da eseguire quando si verifica il click
@@ -113,8 +160,8 @@ button.onclick = function() {
 All'interno della funzione dell'event listener, puoi manipolare il DOM come desideri. Puoi cambiare lo stile degli elementi, aggiungere o rimuovere classi, modificare il testo, creare nuovi elementi e molto altro ancora.
 
 ```js
-const button = document.getElementById('myButton')
-const myElement = document.getElementById('myElement')
+button = document.getElementById('myButton')
+myElement = document.getElementById('myElement')
 
 button.addEventListener('click', function() {
   myElement.style.color = 'red'
@@ -130,8 +177,4 @@ Prima di proseguire è bene sapere che tutto ciò non rappresenta pienamente l'u
 
 Terminiamo con il processo con cui un listener lavora può essere approfondito [nei manuali del w3c](https://www.w3.org/TR/uievents/), di cui è possibile estrarre la lista di ogni evento che, per comodità, ho riassunto in un file dedicato [qui](https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-all-javascript-event-listeners.md).
 
----
 
-#### Manipolazione tramite attributi
-
-...
