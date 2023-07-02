@@ -10,8 +10,69 @@ Materiale didattico a cura di @berto-dev - https://berto.dev
 
 Tutti i nodi disponibili sono presenti tra i manuali didattici del w3c [[1](https://w3c.github.io/)][[2](https://www.w3.org/)] che, tra le altre cose, rappresenta l'ente ufficiale che determina lo standard di qualità del web moderno e "<a href='https://w3c.github.io/elements-of-html/' target='_blank'>tutti i suoi componenti html</a>" ed la loro <a href='https://validator.w3.org/#validate_by_input' target='_blank'>validazione strutturale</a>. Questi componenti possono essere recuperati e manipolati per struttura, attributi e valori, da javascript direttamente in runtime (mentre il codice è in funzione) perchè Js è parte integrante dell'ecosistema web... è letteralmente nato per la manipolazione dei dati del DOM e del lato utente, quindi dell'HTML o di qualsiasi markup (di cui si disponga delle API adatte) per la struttura di dati.
 
-JavaScript, tuttavia, non si muove da solo e necessita che qualcosa "capiti"... questa "circostanza di avvenimenti" dettati dalla macchina in uso o da un'azione utente è appunto detta "evento". Per l'esattezza: Js è un linguaggio event driven, interpretato runtime da un motore (solitamente scritti in c++ come il V8) ovvero il cui codice viene eseguito linea per linea da un interprete durante l'esecuzione del programma stesso. L'interprete legge il codice sorgente, analizza le istruzioni una alla volta e le esegue immediatamente.
+Un po' di codice rende l'idea:
+
+```html
+<!DOCTYPE html>
+
+<html lang="it">
+
+    <head>
+        <title>Js: Un corso per dev!</title>
+    </head>
+
+    <body>
+
+        <h1>Hello Mondo!</h1>
+        <p>Questa è la mia prima pagina web!</p>
+
+    </body>
+
+</html>
+```
+
+Quello che vediamo sopra non è "un linguaggio di programmazione", è un "lunguaggio di markup", un "linguaggio strutturale". Html deteremina solo ed esclusivamente la struttura di un "oggetto statico", come ogni oggetto informatico ma scritto in un file che ne coservi la forma idealizzata in "gruppetti di contenitori".
+Se ti stai chiedendo come abbellire il codice sopra, è stato creato un linguaggio apposito che arricchisce di elementi visuali il codice html... il CSS. Non è tema del corso ma nulla vi vieta di scoprire meglio ogni piccolo dettaglio di questo <a href="https://www.w3.org/Style/CSS/all-properties.en.html" target="_blank">"linguaggio di stile" dal w3c</a>
+
+Proviamo ad applicarlo in pagina:
+
+```html
+<!DOCTYPE html>
+
+<html lang="it">
+
+    <head>
+        <title>Js: Un corso per dev!</title>
+        <style>
+            h1{
+                color:blue;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            p{
+                color: teal;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Hello Mondo!</h1>
+        <p>Questa è la mia prima pagina web!</p>
+
+    </body>
+
+</html>
+```
+
+In questo modo abbiamo modificato il titolo e il paragrafo di questa pagina web. CSS però può fare molto di più e in moltissimi casi, per cose standard è consigliabile utilizzarlo al posto di js, ormai più adatto alle "grandi scopi" che a colorare pulsanti e scritte (almeno sul web standard). 
+
+Tutto ciò è comunque considerabile "statico", anche se un pulsantino nel codice HTML dovesse cambiar colore e forma grazie al css, di dati concreti è cambiato ben poco... bisogna che succeda qualcosa e che qualcuno raccolga e modifichi fisicamente tale struttura... e questo qualcuno è proprio JS!
+
+JavaScript, infatti, non si muove da solo e necessita che qualcosa "capiti"... La "circostanza di avvenimenti", che questi siano dettati dalla macchina o da un'azione utente non importa, viene detta "evento". Per l'esattezza: Js è un linguaggio event driven, interpretato runtime da un motore (solitamente scritti in c++ come il V8) ovvero il cui codice viene eseguito linea per linea da un interprete durante l'esecuzione del programma stesso. L'interprete legge il codice sorgente, analizza le istruzioni una alla volta e le esegue immediatamente.
 Da notare che alcuni motori di interpretazione, proprio come il V8, utilizzano "anche" la compilazione JIT (Just-In-Time Compilation) per ottimizzare l'esecuzione del codice durante l'esecuzione, traformando l'interpretazione in linguaggio a basso livello, quindi da "istruzione" a "macchina" letteralmente. Questo significa che parte del codice JavaScript, talvolta, viene compilato in codice macchina in tempo reale per migliorare le prestazioni, ma rimane che l'interprete viene comunque utilizzato per l'esecuzione complessiva del codice.
+
 
 Chiarito ciò, cerchiamo di comprendere meglio gli eventi... 
 
