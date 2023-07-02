@@ -16,10 +16,40 @@ console.log(text.length)
 // 16
 ```
 
+- **toUpperCase()** e **toLowerCase()**: Restituisce una nuova stringa con tutti i caratteri convertiti in maiuscolo o minuscolo.
+```js
+const str = 'Hello World';
+console.log(str.toUpperCase()); // Output: 'HELLO WORLD'
+```
+
+- **includes()**: Restituisce true o false se un elemento è incluso (o non) della stringa.
+```js
+const str = 'Hello World';
+console.log(str.includes('Wor')); // Output: true
+```
+
+- **match()**: Restituisce true o false se un elemento è esattamente incluso nella stringa.
+```js
+const str = 'Hello World';
+console.log(str.match(/everyone/g)); // Output: false
+```
+
+- **search()**: Restituisce l'index del carattere dentro una stringa.
+```js
+const str = 'Hello World';
+console.log(str.search('Wo')); // Output: 6
+```
+
 - **charAt()**: Restituisce il carattere alla posizione specificata nella stringa.
 ```js
 const str = 'Hello';
 console.log(str.charAt(1)); // Output: 'e'
+```
+
+- **padStart(), padEnd()**: Aggiunge all'inizio o alla fine una serie di caratteri alla stringa.
+```js
+const str = 'Hello';
+console.log(str.padEnd(" world!")); // Output: 'Hello world!'
 ```
 
 - **concat()**: Concatena una o più stringhe.
@@ -27,6 +57,12 @@ console.log(str.charAt(1)); // Output: 'e'
 const str1 = 'Hello';
 const str2 = 'World';
 console.log(str1.concat(' ', str2)); // Output: 'Hello World'
+```
+
+- **startWith(), endWith()**: Restituisce il true o false se la posizione risulta corretta o non corretta.
+```js
+const str = 'Hello';
+console.log(str.startWith('He')); // Output: true
 ```
 
 - **indexOf()**: Restituisce l'indice della prima occorrenza di una sottostringa nella stringa, o -1 se non viene trovata.
@@ -53,12 +89,6 @@ const str = 'Hello World';
 console.log(str.substring(6, 11)); // Output: 'World'
 ```
 
-- **toUpperCase()** e **toLowerCase()**: Restituisce una nuova stringa con tutti i caratteri convertiti in maiuscolo o minuscolo.
-```js
-const str = 'Hello World';
-console.log(str.toUpperCase()); // Output: 'HELLO WORLD'
-```
-
 - **replace()** e **replaceAll()**: Restituisce una nuova stringa in cui una sottostringa o un'espressione regolare specificata viene sostituita con un'altra.
 ```js
 const str = 'Hello World';
@@ -73,10 +103,16 @@ const str = 'Hello,World,Universe';
 console.log(str.split(',')); // Output: ['Hello', 'World', 'Universe']
 ```
 
-- **trim()**: Rimuove gli spazi vuoti (o altri caratteri di spaziatura) dall'inizio e dalla fine della stringa.
+- **trim(), trimStart() , trimEnd()**: Rimuove gli spazi vuoti (o altri caratteri di spaziatura) dall'inizio e dalla fine della stringa.
 ```js
 const str = '  Hello World  ';
 console.log(str.trim()); // Output: 'Hello World'
+```
+
+- **repeat()**: Ripete per N volte la stringa
+```js
+const str = 'Hello! ';
+console.log(str.repeat(3)); // Output: Hello! Hello! Hello! 
 ```
 
 Le stringhe possono essere trattate come array di caratteri, ma ricorda che sono immutabili, il che significa che i metodi di modifica delle stringhe creano sempre nuove stringhe anziché modificarle direttamente.
