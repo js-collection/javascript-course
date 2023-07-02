@@ -128,4 +128,10 @@ Manipolare il DOM tramite gli eventi consente di rendere la pagina web interatti
 
 Prima di proseguire è bene sapere che tutto ciò non rappresenta pienamente l'uso del termine "dinamico" (anche se tutto, umanamente, sembra muoversi). Per un informatico il termine è più collegato alle esigenze di salvataggio e stoccaggio dati nei database e alla creazione dei sistemi server per gestirle... ma realizzare un'interfaccia con dinamismi ne è comunque una parte.
 
-Terminiamo con il processo con cui un listener lavora può essere approfondito [nei manuali del w3c](https://www.w3.org/TR/uievents/), di cui è possibile estrarre la lista di ogni evento che, per comodità, ho riassunto in un file dedicato [qui]()
+Terminiamo con il processo con cui un listener lavora può essere approfondito [nei manuali del w3c](https://www.w3.org/TR/uievents/), di cui è possibile estrarre la lista di ogni evento che, per comodità, ho riassunto in un file dedicato [qui](https://github.com/js-rt-collection/js-basic-course-ita/blob/main/-all-javascript-event-listeners.md).
+
+---
+
+#### Manipolazione tramite attributi
+
+...
