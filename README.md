@@ -1,6 +1,7 @@
 # Javascript corso base
 Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.dev/corsi.html)
 
+<img src="https://github.com/js-collection/js-basic-course-ita/blob/main/banner.js.github.webp" alt=" corso javascript "/>
 
 ### PERCORSO DI STUDI - INDICE
 
