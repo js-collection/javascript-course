@@ -30,7 +30,12 @@ Della fruibilità di js ne abbiamo già parlato ma uno tra i motivi per cui js �
 Possiamo dunque eseguire già da adestro il nostro primo programma e comprendere, sin da subito, quanto sia relativamente semplice usufriure di js:
 
 - apri il browser
-- clicca F12 o tasto destro > ispeziona
+- per aprire la Console puoi:
+    - clicca F12,
+    - clicca Fn+F12
+    - premere Command + Option + J (Mac)
+    - Control + Maiusc + J
+    - o semplicemente... tasto destro > ispeziona
 - Hai ora un nuovo pannello... clicca su "console"
 
 in 3 passaggi, pur non avendo un ecosistema un engine javascript dedicato (come nodejs) installato nella nostra macchina, possiamo testare quanto più ci piace in totale sicurezza.
@@ -119,6 +124,3 @@ Scherzi a parte, tutto ciò ci approccia alla giusta condizione di partenza per 
 I vari tipi di dati e la loro elaborazione verranno ovviamente meglio affrontati in seguito, per ora abbiamo fatto i primi due grandi passi per avvicinarci al mondo dell'infromatica e di javascript: allocare qualcosa in memoria ed usarla a piacimento... cioè, un programma!
 
 Buon divertimento per le prossime lezioni!
-
-
-Alberto
