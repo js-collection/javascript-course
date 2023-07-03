@@ -33,7 +33,7 @@ Ecco un esempio di codice HTML che illustra l'idea del DOM:
 </html>
 ```
 
-Da notare che l'HTML non è un linguaggio di programmazione, ma un linguaggio di markup che definisce la struttura di un oggetto statico, simile ad altri oggetti informatici, ma scritto in un file che conserva la sua forma idealizzata in gruppi di contenitori. Se desideri abbellire l'output del codice HTML, esiste un linguaggio apposito chiamato CSS che permette di aggiungere elementi visivi. Puoi trovare maggiori dettagli su ogni proprietà CSS tramite il W3C: https://www.w3.org/Style/CSS/all-properties.en.html
+Da notare che l'HTML non è un linguaggio di programmazione, ma un linguaggio di markup che definisce la struttura di un oggetto statico, simile ad altri oggetti informatici, ma scritto in un file che conserva la sua forma idealizzata in gruppi di contenitori. Se desideri abbellire l'output del codice HTML, esiste un linguaggio apposito chiamato CSS che permette di aggiungere elementi visivi. Puoi trovare maggiori dettagli su ogni proprietà CSS tramite il W3C: [w3c : all-properties](https://www.w3.org/Style/CSS/all-properties.en.html) e molti esempi di tecnica di layouts in ["github: css-layout"](https://github.com/ulivz/css-layout) medio-avanzata nella repo ["github: You-need-to-know-css"](https://github.com/l-hammer/You-need-to-know-css) 
 
 Proviamo ad applicare il CSS alla pagina HTML precedente per modificarne l'aspetto:
 
