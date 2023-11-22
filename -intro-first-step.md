@@ -27,7 +27,7 @@ Guardando al futuro, JavaScript continua a evolversi e ad essere ampiamente util
 
 Della fruibilità di js ne abbiamo già parlato ma uno tra i motivi per cui js è adorato da molti sviluppatori è la capacità, rispetto al vecchio PHP, di poter essere tracciato e corretto velocemente. Per fare ciò è necessaria una semplice console di sistema o un terminale.
 
-Possiamo dunque eseguire già da adestro il nostro primo programma e comprendere, sin da subito, quanto sia relativamente semplice usufriure di js:
+Possiamo dunque eseguire già da adesso il nostro primo programma e comprendere, sin da subito, quanto sia relativamente semplice usufriure di js:
 
 - apri il browser
 - per aprire la Console puoi:
