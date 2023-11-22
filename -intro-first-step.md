@@ -23,7 +23,7 @@ Grazie all'adozione di Node.js lato server e allo sviluppo di app ibride, JavaSc
 Guardando al futuro, JavaScript continua a evolversi e ad essere ampiamente utilizzato. Grazie alla sua popolarità e alla vasta comunità di sviluppatori, il linguaggio è diventato una pietra angolare dello sviluppo web moderno. È sempre più comune trovare JavaScript anche in ambiti come l'intelligenza artificiale, l'apprendimento automatico e lo sviluppo di applicazioni mobili, ampliando ulteriormente le sue possibilità e la sua rilevanza nel panorama tecnologico attuale e futuro.
 
 
-#### Perchè Js risulta appezzatissimo? Capiamolo costruendo il nostro primo programma!
+#### Perchè Js risulta apprezzatissimo? Capiamolo costruendo il nostro primo programma!
 
 Della fruibilità di js ne abbiamo già parlato ma uno tra i motivi per cui js è adorato da molti sviluppatori è la capacità, rispetto al vecchio PHP, di poter essere tracciato e corretto velocemente. Per fare ciò è necessaria una semplice console di sistema o un terminale.
 
