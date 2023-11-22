@@ -1,7 +1,9 @@
 # Javascript corso base
 Materiale didattico a cura di @berto-dev - [berto.dev corso js](https://berto.dev/corsi.html)
 
-<img src="https://github.com/js-collection/js-basic-course-ita/blob/main/banner.js.github.webp" alt=" corso javascript "/>
+<a href="https://github.com/sponsors/js-collection">
+  <img src="./.depot/.repo/banner.jscourse.webp" alt=" corso javascript "/>
+</a>
 
 <hr>
 <br>
